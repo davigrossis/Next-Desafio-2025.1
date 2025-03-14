@@ -1,6 +1,6 @@
 import ManageProductsTable from "./manage-products";
 
-export default function AdminLayout() {
+export default function AdminPage() {
     return(
         <div className="w-full flex flex-col justify-center my-auto gap-10">
             <div className="flex flex-col gap-2 items-center text-center ">

@@ -10,7 +10,7 @@ export default function ManageProductsTable () {
                     99 produtos encontrados...
                 </span>
                 <Link
-                href={'/admin/manage/products/create'}
+                href={'/admin/create'}
                 >
                     <button className="py-2 w-full md:w-52 px-6 border-2 rounded-md bg-sky-600 hover:bg-btncard">
                         + Criar Categoria
