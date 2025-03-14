@@ -1,22 +1,47 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next';
+import { Oswald, Montserrat, Roboto } from 'next/font/google';
+import './globals.css';
+import Header from '@/components/header';
+import Footer from '@/components/footer';
 
-const inter = Inter({ subsets: ["latin"] });
+const oswald = Oswald({
+	weight: ['200', '300', '400', '500', '600', '700'],
+	style: 'normal',
+	subsets: ['latin'],
+	variable: '--font-oswald',
+});
+
+const montserrat = Montserrat({
+	weight: ['300', '400', '500', '600', '700', '800', '900'],
+	style: 'normal',
+	subsets: ['latin'],
+	variable: '--font-montserrat',
+});
+
+const roboto = Roboto({
+	weight: ['300', '400', '500', '700', '900'],
+	style: 'normal',
+	subsets: ['latin'],
+	variable: '--font-roboto',
+});
 
 export const metadata: Metadata = {
-  title: "Desafio Next.JS 2024.2",
-  description: "Desafio Next.JS, Typescript, Tailinwd, Prisma, semestre 2024.2 para todos os membros da Code JR",
+	title: 'cineboxd',
+	description: 'Um site para comprar tudo que quiser do mundo cinematografico',
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
-  );
+	return (
+		<html lang="en">
+			<body className={` ${oswald.variable} ${montserrat.variable} ${roboto.variable} font-roboto`}>
+				<Header />
+				{children}
+				<Footer />
+			</body>
+		</html>
+	);
 }
