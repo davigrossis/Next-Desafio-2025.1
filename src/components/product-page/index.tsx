@@ -1,14 +1,16 @@
 import Link from "next/link";
 import Search from "../search";
 import CardProduct from "./cardProduct";
+import { Product } from "../../../types/data";
+import Pagination from "../pagination";
 
-export default function ProductPage () {
-    const count = 0;
+export default function ProductPage ({products, count, totalPages}: {products: Product[], count: number, totalPages: number}) {
     return(
+
 
         <div className="w-full space-y-12 justify-items-center">
             <Search count={count}/>
-            {count != 0 ? (
+            {count === 0 ? (
                 <div className="w-full flex flex-col">
                     <span className="text-2xl font-extrabold">
                         Nenhuma publicação encontrada.
@@ -18,20 +20,15 @@ export default function ProductPage () {
                     </span>
                 </div>
             ) : (
-                <div className="w-full flex flex-col gap-12">
-                    <CardProduct link="/produto/1" value={199.99} title="Funko pop ddasdasdasaasdasdasdas" image="/funko.png"></CardProduct>
+                <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 justify-items-center">
+                    {products.map((product, index) => (
+                        <CardProduct key={index} product={product}/>
+                    ))}                    
                 </div>
             )}
-            <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 justify-items-center">
-                <CardProduct link="/produto/1" value={199.99} title="Funko pop ddasdasdasaasdasdasdas" image="/funko.png"></CardProduct>
-                <CardProduct link="/produto/1" value={199.99} title="Funko pop ddasdasdasaasdasdasdas" image="/funko.png"></CardProduct>
-                <CardProduct link="/produto/1" value={199.99} title="Funko pop ddasdasdasaasdasdasdas" image="/funko.png"></CardProduct>
-                <CardProduct link="/produto/1" value={199.99} title="Funko pop ddasdasdasaasdasdasdas" image="/funko.png"></CardProduct>
-                <CardProduct link="/produto/1" value={199.99} title="Funko pop ddasdasdasaasdasdasdas" image="/funko.png"></CardProduct>
-                <CardProduct link="/produto/1" value={199.99} title="Funko pop ddasdasdasaasdasdasdas" image="/funko.png"></CardProduct>
-                <CardProduct link="/produto/1" value={199.99} title="Funko pop ddasdasdasaasdasdasdas" image="/funko.png"></CardProduct>
-                <CardProduct link="/produto/1" value={199.99} title="Funko pop ddasdasdasaasdasdasdas" image="/funko.png"></CardProduct>
-            </div>
+            {totalPages > 1 && (
+                <Pagination totalPages={totalPages}/>
+            )}
         </div>
     )
 }
