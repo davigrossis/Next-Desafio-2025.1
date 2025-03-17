@@ -11,6 +11,10 @@ export default async function Page(
     const id = parseInt(params.id, 10)
     const product = await fetchProductById(id)
 
+    if (!product) {
+        return <p>Produto não encontrado</p>;
+    }
+
     return (
         <div className="w-full space-y-12 flex justify-center items-center min-h-screen">
             <div className="w-10/12 flex flex-col gap-10">
