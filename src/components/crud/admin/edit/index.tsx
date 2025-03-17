@@ -3,7 +3,7 @@
 import { updateProduct } from "../../../../../actions/admin/products/actions"
 import { Product } from "../../../../../types/data"
 
-export default function EditProduct ({product}: {product: Product}) {
+export default function EditProduct ({product}: {product: Product | null }) {
 
     const updateProductWithId = updateProduct.bind(null, product?.id)
 
