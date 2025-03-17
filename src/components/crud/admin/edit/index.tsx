@@ -5,7 +5,7 @@ import { Product } from "../../../../../types/data"
 
 export default function EditProduct ({product}: {product: Product | null }) {
 
-    const updateProductWithId = updateProduct.bind(null, product?.id)
+    const updateProductWithId = product?.id ? updateProduct.bind(null, product.id) : async () => {};
 
     return( 
         <div className="w-full lg:w-9/12 xl:w-7/12 p-4 border-2 rounded-md flex flex-col gap-6">
