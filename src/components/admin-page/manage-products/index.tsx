@@ -8,7 +8,7 @@ export default function ManageProductsTable ({products, count}: {products: Produ
         <div className="w-full p-4 border-2 rounded-md flex flex-col gap-4">
             <div className="flex flex-wrap items-center w-full justify-between">
                 <span className="text-base self-end">
-                    99 produtos encontrados...
+                    {count} produtos encontrados...
                 </span>
                 <Link
                 href={'/admin/create'}

@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import EditProduct from "@/components/crud/admin/edit";
 import DashboardTitle from "@/components/dashboard-title";
 import { fetchProductById } from "../../../../../actions/admin/products/actions";
