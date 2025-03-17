@@ -11,7 +11,7 @@ export default function CardNews ({ product }: CardNewsProps) {
     return(
         <Link href={`/produto/${product.id}`} className="group block">
             <div className="flex bg-bgcard group-hover:shadow-2xl rounded-xl duration-300">
-                <div className="flex flex-col lg:flex-row w-full rounded-xl shadow-xl">
+                <div className="flex flex-col w-full rounded-xl shadow-xl">
                     <div className="flex overflow-hidden p-2">
                         <Image
                         src={product.image || '/funko.png'}

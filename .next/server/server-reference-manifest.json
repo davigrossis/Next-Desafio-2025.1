@@ -1,5 +1,22 @@
 {
-  "node": {},
+  "node": {
+    "b373d4c5e2b1fa25ad99e589c7029df367f8e105": {
+      "workers": {
+        "app/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CDesafioNext%5C%5Cdesafio-next-codejr%5C%5CNext-Desafio-2025.1%5C%5Cactions%5C%5Chome%5C%5Cactions.ts%22%2C%5B%22default%22%5D%5D%2C%5B%22C%3A%5C%5CDesafioNext%5C%5Cdesafio-next-codejr%5C%5CNext-Desafio-2025.1%5C%5Cactions%5C%5Chome%5C%5CnewsProducts%5C%5Cactions.ts%22%2C%5B%22default%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/page": "rsc"
+      }
+    },
+    "e6a0a53efa405bffd1e4faaf8cb3708e4cb25d84": {
+      "workers": {
+        "app/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CDesafioNext%5C%5Cdesafio-next-codejr%5C%5CNext-Desafio-2025.1%5C%5Cactions%5C%5Chome%5C%5Cactions.ts%22%2C%5B%22default%22%5D%5D%2C%5B%22C%3A%5C%5CDesafioNext%5C%5Cdesafio-next-codejr%5C%5CNext-Desafio-2025.1%5C%5Cactions%5C%5Chome%5C%5CnewsProducts%5C%5Cactions.ts%22%2C%5B%22default%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/page": "rsc"
+      }
+    }
+  },
   "edge": {},
   "encryptionKey": "rZLtlqBHgGsGdgPXU6W0OfRQcGTzDAbTfZCenMjRE8A="
 }

@@ -9,6 +9,7 @@ export default async function getNewsProducts() {
             title: true,
             image: true,
             price: true,
+            description: true,
         },
         orderBy: {
             createdAt: "desc",
