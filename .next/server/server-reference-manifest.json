@@ -15,8 +15,48 @@
       "layer": {
         "app/page": "rsc"
       }
+    },
+    "386511612ef94d79b91fafda864405fe426de6f7": {
+      "workers": {
+        "app/admin/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CDesafioNext%5C%5Cdesafio-next-codejr%5C%5CNext-Desafio-2025.1%5C%5Cactions%5C%5Cadmin%5C%5Cproducts%5C%5Cactions.ts%22%2C%5B%22fetchProducts%22%2C%22deleteProduct%22%2C%22updateProduct%22%2C%22createProduct%22%2C%22fetchProductById%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/admin/page": "rsc"
+      }
+    },
+    "62c5b2d18e0901ea4cef1ac4fa6ea865f4b8e476": {
+      "workers": {
+        "app/admin/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CDesafioNext%5C%5Cdesafio-next-codejr%5C%5CNext-Desafio-2025.1%5C%5Cactions%5C%5Cadmin%5C%5Cproducts%5C%5Cactions.ts%22%2C%5B%22fetchProducts%22%2C%22deleteProduct%22%2C%22updateProduct%22%2C%22createProduct%22%2C%22fetchProductById%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/admin/page": "rsc"
+      }
+    },
+    "9db9df883cb043da5fa35eeb761a463939af5ff0": {
+      "workers": {
+        "app/admin/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CDesafioNext%5C%5Cdesafio-next-codejr%5C%5CNext-Desafio-2025.1%5C%5Cactions%5C%5Cadmin%5C%5Cproducts%5C%5Cactions.ts%22%2C%5B%22fetchProducts%22%2C%22deleteProduct%22%2C%22updateProduct%22%2C%22createProduct%22%2C%22fetchProductById%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/admin/page": "rsc"
+      }
+    },
+    "ebfc2fd5b156c9cc37403dbbd83b7897e7134ba8": {
+      "workers": {
+        "app/admin/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CDesafioNext%5C%5Cdesafio-next-codejr%5C%5CNext-Desafio-2025.1%5C%5Cactions%5C%5Cadmin%5C%5Cproducts%5C%5Cactions.ts%22%2C%5B%22fetchProducts%22%2C%22deleteProduct%22%2C%22updateProduct%22%2C%22createProduct%22%2C%22fetchProductById%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/admin/page": "rsc"
+      }
+    },
+    "ed1ffdbe5b8ad5ba0df2a0459bc6b50293b53f88": {
+      "workers": {
+        "app/admin/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CDesafioNext%5C%5Cdesafio-next-codejr%5C%5CNext-Desafio-2025.1%5C%5Cactions%5C%5Cadmin%5C%5Cproducts%5C%5Cactions.ts%22%2C%5B%22fetchProducts%22%2C%22deleteProduct%22%2C%22updateProduct%22%2C%22createProduct%22%2C%22fetchProductById%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/admin/page": "rsc"
+      }
     }
   },
   "edge": {},
-  "encryptionKey": "rZLtlqBHgGsGdgPXU6W0OfRQcGTzDAbTfZCenMjRE8A="
+  "encryptionKey": "X9fiehtgrwdV49dpWyJUjwU3ZlTXQQ/MDahmhuZQzPg="
 }

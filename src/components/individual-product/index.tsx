@@ -11,7 +11,7 @@ export default function IndividualPost({product}: {product: IndivualProduct | nu
                 alt="Placeholder"
                 width={1920}
                 height={1080}
-                className="lg:h-[700px] object-cover aspect-video w-full rounded-xl"
+                className="h-[500px] lg:h-[700px] object-cover aspect-video w-full rounded-xl"
                 />
             </div>
             <div className="lg:col-span-4 lg:max-h-[700px] 3xl:max-h-max lg:px-4 overflow-auto flex flex-col gap-8 lg:gap-4">

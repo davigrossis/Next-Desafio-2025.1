@@ -5,7 +5,7 @@ import { Product } from "../../../../types/data";
 export default function CardProduct({product}: {product: Product }) {
     return (
         <Link 
-        href={'/'} 
+        href={`/produto/${product.id}`}
         className="w-full lg:w-10/12 flex group ">
             <div className="w-full flex flex-col bg-bgcard shadow-lg rounded-xl group-hover:shadow-2xl duration-300 overflow-hidden">
                 <Image
