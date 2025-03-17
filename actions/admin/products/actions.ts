@@ -37,7 +37,7 @@ export async function fetchProductById(id : number | undefined) {
         }
     })
 
-    return product
+    return product || undefined
 }
 
 export async function createProduct(formData: FormData) {
