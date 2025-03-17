@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { DeleteButton, EditButton, ViewButton } from "../buttons";
+import { Product } from "../../../../types/data";
 
 
-export default function ManageProductsTable () {
+export default function ManageProductsTable ({products, count}: {products: Product[], count: number}) {
     return(
         <div className="w-full p-4 border-2 rounded-md flex flex-col gap-4">
             <div className="flex flex-wrap items-center w-full justify-between">
@@ -37,21 +38,28 @@ export default function ManageProductsTable () {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr className="border-b border-b-sky-950 bg-sky-600 hover:bg-sky-800">
+                        {products.map((product, index) => (
+                        <tr key={index} className="border-b border-b-sky-950 bg-sky-600 hover:bg-sky-800">
                             <th className="px-6 py-6 font-medium">
-                                Funko
+                                {product?.title}
                             </th>
                             <th className="px-6 py-6 font-medium">
-                                R$149,99
+                                R${product?.price}
                             </th>
                             <th className="px-6 py-6 font-medium">
-                                Funko de decoração para o seu quarto
+                                {product?.description 
+                                ? product.description.length > 30 ? product.description.slice(0,30) + '...'
+                                : product.description
+                                : 'Descrição não existente' }
                             </th>
                             <th className="px-6 py-6 flex items-center gap-4 text-black">
-                                <ViewButton id={1}/>  <EditButton id={1}/> <DeleteButton id={1}/>
+                                <ViewButton id={product?.id}/>
+                                <EditButton id={product?.id}/>
+                                <DeleteButton id={product?.id}/>
                             </th>
-
                         </tr>
+                        ))}
+                        
                     </tbody>
                 </table>
             </div>

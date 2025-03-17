@@ -74,6 +74,13 @@ async function main() {
 			createdAt: new Date(),
             image: 'https://cdn.awsli.com.br/600x700/84/84034/produto/304303577/agatha-harkness-b-1--800-u95tmnxhwm.jpg',
 		},
+		{
+			title: 'Funko bruxa',
+			description: 'Um funko para decorar o seu quarto',
+			price: 150.99,
+			createdAt: new Date(),
+            image: 'https://cdn.awsli.com.br/600x700/84/84034/produto/304303577/agatha-harkness-b-1--800-u95tmnxhwm.jpg',
+		},
 	];
 
 	for (const product of products) {

@@ -1,33 +1,37 @@
+"use client"
+
+import { createProduct } from "../../../../../actions/admin/products/actions";
+
 export default function CreateProduct () {
     return( 
         <div className="w-full lg:w-9/12 xl:w-7/12 p-4 border-2 rounded-md flex flex-col gap-6">
-            <form action="flex flex-col py-6" autoComplete="off">
+            <form className="flex flex-col py-6" autoComplete="off" action={createProduct}>
                 <div className="flex flex-col gap-1">
                     <label>Nome do Produto</label>
                     <input
-                        className="border-2 p-2 rounded-md" 
-                        name="create-product"
+                        className="border-2 p-2 rounded-md text-black" 
+                        name="name"
                         placeholder="Nome"
                         type="text"
                     />
                     <label>Preço do Produto</label>
                     <input
-                        className="border-2 p-2 rounded-md" 
-                        name="create-product"
+                        className="border-2 p-2 rounded-md text-black" 
+                        name="price"
                         placeholder="Preço"
-                        type="number" 
+                        type="text" 
                     />
                     <label>Descrição do Produto</label>
                     <input
-                        className="border-2 p-2 rounded-md" 
-                        name="create-product"
+                        className="border-2 p-2 rounded-md text-black" 
+                        name="description"
                         placeholder="Descrição"
                         type="text" 
                     />
                     <label>Imagem do Produto</label>
                     <input
-                        className="border-2 p-2 rounded-md" 
-                        name="create-product"
+                        className="border-2 p-2 rounded-md text-black" 
+                        name="image"
                         placeholder="Imagem"
                         type="text" 
                     />

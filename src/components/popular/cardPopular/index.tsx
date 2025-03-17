@@ -17,7 +17,7 @@ export default function CardPopular ({product}: CardPopularProps) {
                         alt={product.title || 'Imagem'}
                         width={800}
                         height={800}
-                        className="h-full w-full object-cover"
+                        className="max-h-[140px]  lg:max-h-[384px] lg:max-w-[384px] 2xl:max-h-[450px] 2xl:max-w-[450px] object-cover "
                         />
                     </div>
                     <div className="p-2 flex flex-col justify-between">

@@ -1,7 +1,9 @@
-import { Edit2, Eye, Trash2 } from "lucide-react"
-import Link from "next/link"
+'use client'
 
-export function EditButton({id} : { id: number}) {
+import Link from "next/link"
+import { deleteProduct } from "../../../../actions/admin/products/actions"
+
+export function EditButton({id} : { id: number | undefined }) {
     return(
         <Link
         href={`/admin/edit/${id}`}
@@ -13,18 +15,22 @@ export function EditButton({id} : { id: number}) {
     )
 } 
 
-export function DeleteButton({id} : { id: number}) {
+export function DeleteButton({id} : { id: number | undefined }) {
     return(
-        <button className="font-medium text-red-600 hover:underline">
+        <button onClick={() => deleteProduct(id)} className="font-medium text-red-600 hover:underline">
             Deletar
         </button>
     )
 } 
 
-export function ViewButton({id} : { id: number}) {
+export function ViewButton({id} : { id: number | undefined }) {
     return(
-        <button className="font-medium text-cyan-100 hover:underline">
-            Visualizar
-        </button>
+        <Link
+        href={`/admin/visualizar/${id}`}
+        className="h-6">
+            <button className="font-medium text-cyan-200 hover:underline">
+                Visualizar
+            </button>
+        </Link>
     )
 } 

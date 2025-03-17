@@ -37,9 +37,7 @@ export default function Header() {
                                 <span className='text-2xl font-oswald hover:bg-black/20 p-2 rounded-xl' >{link.label}</span>
                             </Link>
                         )}
-                        <Link href='/carrinho'>
-                            <ShoppingCart className=' w-12 h-12 text-2xl font-oswald hover:bg-black/20 p-2 rounded-xl' />
-                        </Link>
+
                         <Link href='/login' className='bg-bgcard font-oswald text-black  hover:bg-sky-500/20 p-4 rounded-2xl'>
                                 <span className='text-2xl p-2 rounded-xl' >Login</span>
                         </Link>
@@ -55,9 +53,6 @@ export default function Header() {
                             :
                             <div className='flex gap-8'>
                                 
-                                <Link href='/carrinho'>
-                                    <ShoppingCart  className='w-11 h-11 text-white cursor-pointer'/>
-                                </Link>
 
                                 <Menu
                                 onClick={toggleNav}
