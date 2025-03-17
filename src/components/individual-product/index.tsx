@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { IndivualProduct } from "../../../types/data";
 
-export default function IndividualPost({product}: {product: IndivualProduct}) {
+export default function IndividualPost({product}: {product: IndivualProduct | null}) {
         
     return(
         <div className="w-full flex flex-col my-auto lg:grid lg:grid-cols-8 gap-8">
